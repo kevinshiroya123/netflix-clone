@@ -1,0 +1,115 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.088); /* Slight transparency */
+  color: white;
+  position: fixed; /* Stays on top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; /* Smooth slide effect */
+}
+
+.header-container.hidden {
+  transform: translateY(-100%); /* Moves header out of view */
+}
+
+.header-container.visible {
+  transform: translateY(0); /* Shows header */
+}
+
+.logo {
+  height: 36px;
+  cursor: pointer;
+}
+
+.sign-in-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #e50914;
+}
+
+/* Profile Icon */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+/* Profile Dropdown Container */
+.header-profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Menu */
+.profile-dropdown {
+  position: absolute;
+  top: 50px; /* Position below the profile icon */
+  right: 0;
+  background-color: rgba(20, 20, 20, 0.9);
+  color: white;
+  border-radius: 5px;
+  width: 160px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Profile Option (Clickable) */
+.profile-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.profile-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Small Profile Icon in Dropdown */
+.profile-icon-small {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Dropdown Divider */
+.dropdown-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 8px 0;
+}
+
+/* Signout Button */
+.signout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signout-button:hover {
+  background-color: #e50914;
+}

@@ -1,0 +1,55 @@
+.jumbotron-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 20px;
+  background-color: black;
+  color: white;
+  gap: 20px;
+  border-bottom: 5px solid #65656579; /* Bottom border */
+  margin: 0px 0; /* Remove spacing between Jumbotrons */
+}
+
+.jumbotron-content {
+  display: flex;
+  max-width: 1000px;
+  flex: 1;
+}
+
+.jumbotron-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Media Query for screens up to 500px */
+/* Target ONLY reverse elements */
+@media (max-width: 500px) {
+  .jumbotron-content {
+      flex-direction: column; /* Change all to column layout */
+      align-items: center; /* Center the items for better UI */
+      text-align: center;
+  }
+
+  /* Ensure reversed ones behave the same way */
+  .jumbotron-content.reverse {
+      flex-direction: column; /* Override reverse for small screens */
+      align-items: center;
+      text-align: center;
+  }
+
+  .text, .image {
+      flex: none;
+      width: 100%;
+  }
+}

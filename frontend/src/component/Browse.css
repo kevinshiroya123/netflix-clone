@@ -1,0 +1,167 @@
+/* General Styles */
+.browse-container {
+    background-color: black;
+    color: white;
+  padding-top: 0px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    z-index: 0;
+    position: relative;
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  /* Left Content (Title, Summary, Button) */
+  .hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: white;
+    z-index: 2;
+    max-width: 500px;
+    width: 50%;
+  }
+  
+/* Background Image on Right Side */
+/* Background Image on Right Side */
+.hero-bg {z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 500px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-size: cover; /* Maintain aspect ratio */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+  
+/* Gradient Overlay (Left to Transparent Right) */
+.hero-overlay {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 0.6) 60%, transparent 100%);
+}
+
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .play-button {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .hero .play-button:hover {
+    background-color: #e50914;
+  }
+  
+  .play-button {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .play-button:hover {
+    background-color: #e50914;
+  }
+  /* Dot Slider Container */
+.dot-slider {
+  z-index: 3;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+/* Individual Dot */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.252);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Active Dot */
+.dot.active {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+
+  /* Categories */
+  .category {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+  .category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    position: relative; /* Needed for absolute positioning of the button */
+    align-items: center;
+  }
+
+
+
+
+  /* Hide Scrollbar */
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .genre-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .open-popup {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  .browse-container .footer-title{
+    display: none;
+  }
+  .browse-container .footer-input-container{
+    display: none;
+  }

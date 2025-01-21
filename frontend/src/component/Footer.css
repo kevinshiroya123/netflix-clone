@@ -1,0 +1,107 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.footer-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.footer-button:hover {
+  background-color: #e50914;
+}
+
+.footer-question {
+  margin: 20px 0;
+}
+.footer-question a {
+  text-decoration: underline;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #777;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-language {
+  margin-top: 20px;
+}
+
+.footer-language-button {
+  background-color: black;
+  color: white;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Media Query for screens up to 1000px */
+@media (max-width: 500px) {
+    .footer-input{
+        width: 100%;
+    }
+  .footer-input-container {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center align the columns */
+    gap: 20px;
+  }
+
+  .footer-links div {
+    padding: 20px ;
+    width: 100%;
+    align-items: center; /* Center align individual link groups */
+    border-bottom: 5px ridge #444;
+  }
+}
